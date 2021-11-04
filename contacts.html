@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="display: flex; justify-content: center;">
+        <div class="wrapper" style=" padding: 20px; background-color: rgb(84, 120, 218); color: white">
+            <H1 style="font-size: 50px;">DarPro</H1>
+            <ul class="menu" style="display: flex; justify-content: space-between;">
+                <a href="./index.html"><li>Главная</li></a>
+                <li>Контакты</li>
+                <li>Курсы</li>
+                <li>О нас</li>
+                <li>Регистрация на курсы</li>
+            </ul>
+        </div>
+    </header>
+    <div class="body" style="display: flex; justify-content: center; margin: 100px;">
+        <div class="wrapper" style="flex-direction:column;">
+            <form action="/signup" method="POST">
+                <p>
+                  <label>Пол</label>
+                  <label>
+                    <input type="radio" name="title" value="mr">
+                    Муж
+                  </label>
+                  <label>
+                    <input type="radio" name="title" value="mrs">
+                    Жен
+                  </label>
+                </p>
+                <p>
+                  <label>Имя</label>
+                  <input type="text" name="first_name">
+                </p>
+                <p>
+                  <label>Фамилия</label>
+                  <input type="text" name="last_name">
+                </p>
+                <p>
+                  <label>Email</label>
+                  <input type="email" name="email">
+                </p>
+                <p>
+                  <label>Телефон</label>
+                  <input type="tel" name="phone">
+                </p>
+                <p>
+                  <label>Пароль</label>
+                  <input type="password" name="password">
+                </p>
+                <p>
+                  <label>Подтвердите пароль</label>
+                  <input type="password" name="password_confirm">
+                </p>
+                <p>
+                  <label>Страна</label>
+                  <select name="country">
+                    <option>Канада</option>
+                    <option>Франция</option>
+                    <option>Германия</option>
+                    <option>Италия</option>
+                    <option>Япония</option>
+                    <option>Россия</option>
+                    <option>Великобритания</option>
+                    <option>США</option>
+                  </select>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="terms">
+                    Я согласен с <a href="/terms">условиями использования</a>
+                  </label>
+                </p>
+                <p>
+                  <button>
+                    Зарегистрироваться
+                  </button>
+                </p>
+              </form>
+        </div>
+    </div>
+    <footer style="display: flex; justify-content: center; align-items: center; padding: 50px; background-color: black; color: white;">
+        <p>
+            All rights reserved
+        </p>
+    </footer>
+</body>
+</html>

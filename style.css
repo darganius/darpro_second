@@ -1,35 +1,67 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     font-family: Roboto;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-header .menu ul li{
+ul li {
     margin-left: 50px;
-    list-style: none;
+    font-size: 35px;
+    height: 100%;
 }
-header{
-    padding: 50px 100px;
-    font-size: x-large;
-    color: white;
-    background-color: rgb(44, 125, 196);
-}
-footer {
-    background: black;
-    color: white;
-    padding: 50px 430px;
-}
+ul li:hover{
+    background-color: white;
+    color:black;
+    transition: 0.5s ease-in-out;
 
-.blocks{
-    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+}
+.wrapper{
+    width: 70%;
+}
+.row   {
+    display: flex;
+
+}
+.wrapper{
+    display: flex; justify-content: space-evenly; align-items: center;;
+}
+a:visited{
+    color: white;
+}
+.courses {
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
     margin: 25px;
-    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s ease-in-out;
+}
+.courses p {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.courses:hover{
+    background-color: orange;
+    color: white;
+}
+.courses img {
     border-radius: 25px;
 }
-.blocks p{
+form p{
     font-size: 25px;
+    margin:25px;
+}
+button {
+    background-color: green;
+    color: white;
+    border: 0 none none;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 25px;
+    padding: 5px 15px;
 }
